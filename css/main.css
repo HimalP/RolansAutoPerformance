@@ -1,0 +1,182 @@
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding: 8vh;
+}
+
+.hero {
+  background: linear-gradient(rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0.5)),
+    url('../img/hero.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav {
+  opacity: 90%;
+  transition: box-shadow 400ms linear;
+  transition: background 400ms linear;
+}
+
+.navbar-burger {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.has-background-transparent {
+  background: transparent;
+}
+
+.word-tile {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+
+.car-tile {
+  height: 20rem;
+}
+
+.car {
+  height: 20rem;
+}
+
+#gallery {
+  background: linear-gradient(to right, #191919 50%, #f83240 50%);
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: fit-content;
+  justify-items: center;
+  margin: auto;
+  gap: 0.5rem;
+}
+
+.gallery-images img {
+  height: 15rem;
+  width: 25rem;
+  margin: 0.25rem;
+  object-fit: cover;
+}
+
+#services .title,
+#contact .title {
+  border-bottom: 2px solid #f83240;
+  width: fit-content;
+  margin: auto;
+}
+
+.service-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: fit-content;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f83240;
+  height: 10rem;
+  width: 10rem;
+}
+
+.service img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+#contact {
+  background: linear-gradient(to bottom, #191919 50%, white 50%);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  background: #f83240;
+  width: fit-content;
+}
+
+.contact-info {
+  margin: auto;
+  padding: 2rem;
+}
+
+.contact-info span {
+  margin-right: 1rem;
+}
+
+.contact-info > p:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.business-hours {
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-hours .time {
+  text-align: right;
+}
+
+@media only screen and (max-width: 770px) {
+  .word-tile {
+    height: 8rem;
+  }
+
+  .car-tile {
+    height: 8rem;
+  }
+
+  .car {
+    height: 8rem;
+  }
+
+  .gallery-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #contact iframe {
+    width: 90vw;
+    height: 80vw;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .gallery-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #contact iframe {
+    width: 100%;
+  }
+
+  .contact-info {
+    padding: 1rem;
+  }
+}
