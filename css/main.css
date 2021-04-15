@@ -29,6 +29,12 @@ nav {
   background: transparent;
 }
 
+.socials {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+
 .word-tile {
   background: white;
   display: flex;

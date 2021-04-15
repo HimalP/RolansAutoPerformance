@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
 
+    <!-- AOS.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/52ec1b5820.js"
       crossorigin="anonymous"
@@ -43,10 +46,29 @@
     <section id="hero" class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <p class="title is-size-1 has-text-weight-bold has-text-white">
+          <p
+            class="title is-size-1 is-size-2-mobile has-text-weight-bold has-text-white mb-2"
+          >
             Your car is more <br />
             than just a car.
           </p>
+
+          <p
+            class="has-text-weight-bold has-text-white is-size-5 is-size-6-mobile mb-4"
+          >
+            Proudly serving the GTA for over 10 years.
+          </p>
+
+          <div class="socials mb-4">
+            <a href="https://www.instagram.com/rolans_auto_performance/?hl=en"
+              ><img src="./img/socials/ig.png" width="30px"
+            /></a>
+            <a
+              href="https://www.google.com/search?q=rolans+auto+perforamnce&rlz=1C1CHBF_enCA925CA925&oq=rolan&aqs=chrome.0.69i59j69i57j35i39l2j46i199i291i433j69i60l2j69i61.2703j0j4&sourceid=chrome&ie=UTF-8#lrd=0x89d4d671ed57f8f1:0xc75bae70856c6e87,1,,,"
+              ><img src="./img/socials/google.png" width="30px"
+            /></a>
+            <a href=""><img src="./img/socials/fb.png" width="30px" /></a>
+          </div>
 
           <div class="field is-grouped">
             <p class="control">
@@ -207,20 +229,25 @@
       </div>
     </section>
 
+    <p class="has-text-centered py-2 has-background-white">
+      <i class="far fa-copyright"></i> 2021 Rolan's Auto Performance. All Rights
+      Reserved.
+    </p>
+
     <script>
       const burger = document.querySelector('.navbar-burger');
       const navMenu = document.querySelector('.navbar-menu');
+      const nav = document.querySelector('nav');
 
       const navBurger = () => {
         burger.addEventListener('click', () => {
           navMenu.classList.toggle('is-active');
           burger.classList.toggle('is-active');
+          nav.classList.remove('has-background-transparent');
         });
       };
 
       const navBackground = () => {
-        const nav = document.querySelector('nav');
-
         window.addEventListener('scroll', () => {
           this.scrollY < 200
             ? nav.classList.add('has-background-transparent')
@@ -241,6 +268,10 @@
 
       navBurger();
       navBackground();
+      navLink();
+      AOS.init();
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
