@@ -45,7 +45,7 @@
 
     <section id="hero" class="hero is-fullheight">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
           <p
             class="title is-size-1 is-size-2-mobile has-text-weight-bold has-text-white mb-2"
           >
@@ -97,7 +97,7 @@
         <div
           class="columns has-text-primary has-text-weight-bold is-size-1 is-size-5-mobile is-gapless my-6 is-mobile"
         >
-          <div class="column">
+          <div class="column" data-aos="fade-right">
             <div class="car-tile">
               <img class="car" src="./img/cars/car-2.png" alt="" />
             </div>
@@ -111,7 +111,7 @@
             </div>
           </div>
 
-          <div class="column">
+          <div class="column" data-aos="fade-left">
             <div class="word-tile">
               <p class="test">TRUSTWORTHY</p>
             </div>
@@ -136,12 +136,36 @@
       <p class="title has-text-centered has-text-white">OUR WORK</p>
 
       <div class="gallery-images">
-        <img src="./img/gallery/img1.jpg" />
-        <img src="./img/gallery/img2.jpg" />
-        <img src="./img/gallery/img3.jpg" />
-        <img src="./img/gallery/img4.jpg" />
-        <img src="./img/gallery/img5.jpg" />
-        <img src="./img/gallery/img6.jpg" />
+        <img
+          src="./img/gallery/img1.jpg"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
+        <img
+          src="./img/gallery/img2.jpg"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
+        <img
+          src="./img/gallery/img3.jpg"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
+        <img
+          src="./img/gallery/img4.jpg"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
+        <img
+          src="./img/gallery/img5.jpg"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
+        <img
+          src="./img/gallery/img6.jpg"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        />
       </div>
     </section>
 
@@ -149,35 +173,35 @@
       <p class="title has-text-centered has-text-white">FEATURED SERVICES</p>
 
       <div class="service-icons has-text-white has-text-weight-bold is-size-5">
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/engine.png" />
           <p>Engine Repair</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/oil.png" />
           <p>Oil/Lube/Filter</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/tire.png" />
           <p>Tire Services</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/transmission.png" />
           <p>Transmission</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/brakes.png" />
           <p>Brakes</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/exhaust.png" />
           <p>Exhaust</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/suspension.png" />
           <p>Suspension</p>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-out" data-aos-duration="1000">
           <img src="./img/services/more.png" />
           <p>and More</p>
         </div>
@@ -234,6 +258,8 @@
       Reserved.
     </p>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       const burger = document.querySelector('.navbar-burger');
       const navMenu = document.querySelector('.navbar-menu');
@@ -271,7 +297,5 @@
       navLink();
       AOS.init();
     </script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
