@@ -6,7 +6,7 @@ body {
 
 .hero {
   background: linear-gradient(rgba(54, 54, 54, 0.5), rgba(54, 54, 54, 0.5)),
-    url('../img/hero.jpg') no-repeat center center fixed;
+    url('../img/hero.jpg') no-repeat fixed top center;
   background-size: cover;
 }
 
